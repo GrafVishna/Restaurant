@@ -2233,6 +2233,16 @@ body {
   }
 }
 
+@media (max-width: 20em) {
+  .column-subscribe__input,
+  .column-subscribe__btn {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
 @media (max-width: 71.875em) {
   .footer__body {
     -ms-grid-columns: minmax(14.375rem, 1fr) minmax(18.75rem, 31.25rem) minmax(14.375rem, 1fr);
@@ -2416,6 +2426,10 @@ body {
     padding: 6.25rem 0;
   }
 
+  .footer {
+    padding-top: 5rem;
+  }
+
   .footer__logo-top-wrapper {
         grid-template-areas: "logo logo" "tag social";
     -ms-grid-columns: (1fr)[2];
@@ -2585,7 +2599,7 @@ body {
 
 @media (max-width: 47.99875em) {
   .header__container {
-    padding-top: 5.625rem;
+    padding-top: 5.9375rem;
     padding-bottom: 1.25rem;
     display: -ms-grid;
     display: grid;
@@ -2835,6 +2849,10 @@ body {
 
   .reservation {
     padding: 3.75rem 0;
+  }
+
+  .footer {
+    padding-top: 3.75rem;
   }
   .header__logo {
     -ms-grid-row: 1;
@@ -3167,7 +3185,7 @@ body {
 
   .column-subscribe__input,
   .column-subscribe__btn {
-    width: 100%;
+    width: 90%;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
