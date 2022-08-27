@@ -2599,7 +2599,7 @@ body {
 
 @media (max-width: 47.99875em) {
   .header__container {
-    padding-top: 5.9375rem;
+    padding-top: 5.625rem;
     padding-bottom: 1.25rem;
     display: -ms-grid;
     display: grid;
