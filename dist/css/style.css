@@ -227,9 +227,9 @@ body {
   padding: 1.375rem 3.5625rem 1.125rem 3.5625rem;
   color: #292e36;
   border: 2px solid #e1b168;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 @supports (font-size: clamp( 1rem , 0.8878504673rem  +  0.5607476636vw , 1.375rem )) {
@@ -410,7 +410,7 @@ body {
 .header__reservation-btn {
   padding: 1.375rem 3.5625rem 1.125rem 3.5625rem;
   min-width: 18.4375rem;
-  min-height: 4.5625rem;
+  min-height: 4.8125rem;
 }
 
 .header__logo {
@@ -1494,9 +1494,9 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.65);
   z-index: 2;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .card-blog__btn {
@@ -1517,7 +1517,7 @@ body {
   -ms-grid-rows: auto auto 1fr;
   grid-template-rows: auto auto 1fr;
   padding: 3.125rem 2.8125rem 2.5rem 2.8125rem;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   border-top: 0;
 }
 
@@ -1737,6 +1737,9 @@ body {
   background-color: #ffffff;
   color: #292e36;
   margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .input-date-wrapper {
@@ -1961,6 +1964,24 @@ body {
 
 .footer-copy__info a {
   color: #e1b168;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-copy__info a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #e1b168;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .footer-copy__links {
@@ -1974,6 +1995,26 @@ body {
      -moz-column-gap: 1.25rem;
           column-gap: 1.25rem;
   color: #e1b168;
+}
+
+.footer-copy__link {
+  position: relative;
+}
+
+.footer-copy__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #e1b168;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .swiper {
@@ -2066,13 +2107,17 @@ body {
 
 @media (min-width: 61.99875em) {
   ._btn-gray:hover {
-    background-color: rgba(225, 177, 104, 0.0745098039);
     color: #e1b168;
+    -webkit-box-shadow: 0 0px 15px #e1b168;
+            box-shadow: 0 0px 15px #e1b168;
   }
 
   ._btn-gold:hover {
+    border: 2px solid #e1b168;
     color: #e1b168;
-    background-color: rgba(225, 177, 104, 0.1333333333);
+    background-color: transparent;
+    -webkit-box-shadow: 0 0px 15px #e1b168;
+            box-shadow: 0 0px 15px #e1b168;
   }
 
   ._social ._social-item a:hover svg {
@@ -2098,6 +2143,46 @@ body {
 
   .card-blog__image:hover::before {
     opacity: 0;
+  }
+
+  .card-blog__btn:hover {
+    border: 2px solid #e1b168;
+    color: #e1b168;
+    background-color: #292e36;
+  }
+
+  .form-reservation__btn:hover {
+    background-color: #ffffff;
+    color: #e1b168;
+    -webkit-box-shadow: 0 0px 15px #e1b168;
+            box-shadow: 0 0px 15px #e1b168;
+  }
+
+  .footer-copy__info a:hover::before {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+
+  .footer-copy__link:hover::before {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@media (min-width: 61.99875em) and (min-width: 61.99875em) {
+  .column-subscribe__btn {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .column-subscribe__btn:hover {
+    background-color: #ffffff;
+    color: #e1b168;
+    -webkit-box-shadow: 0 0px 15px #e1b168;
+            box-shadow: 0 0px 15px #e1b168;
   }
 }
 
